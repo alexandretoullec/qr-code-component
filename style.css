@@ -1,0 +1,104 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-dark-blue: hsl(218, 44%, 22%);
+  --clr-grayish-blue:hsl(220, 15%, 55%);
+  --clr-lightgray:hsl(212, 45%, 89%);
+  --clr-white: #fff;
+  --ff-primary: 'Outfit', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+
+
+  /* - White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-lightgray);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+
+.section-center{
+    margin:calc(100vh - 45rem) auto;
+    /* height:20rem; */
+    width: 20rem;
+    height: 32rem;
+    display: grid;
+    justify-items: center;
+    background: var(--clr-white);
+    border-radius: 25px;
+    padding: 0;
+}
+
+img{
+    max-width: calc(20rem - 2rem);
+    border-radius: 25px;
+    margin-top: 1.1rem;
+}
+.text-container{
+    padding: 1rem 2rem ;
+    display: flex;
+    flex-direction: column;
+}
+
+.title,.text{
+    text-align: center;
+    padding: 0.2rem 0 1rem;
+}
+
+
+
+.text{
+  color:var(--clr-grayish-blue)
+}
+
+footer{
+  margin-top: calc(100vh - 40rem) ;
+  text-align: center;
+}
+
+
+@media (max-width:600px) {
+  .section-center{
+    margin-top: 2rem;
+  }
+  
+}
+
+
